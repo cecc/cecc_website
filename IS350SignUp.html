@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+     <meta charset="utf-8">
+
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+
+    <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+    
+
+    <title>IS 350 Sign Up - Progressus Bootstrap template</title>
+
+
+
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+    
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
+
+    <!-- Custom styles for our template -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+
+    <script src="assets/js/html5shiv.js"></script>
+
+    <script src="assets/js/respond.min.js"></script>
+
+    <![endif]-->
+    <style>
+
+    table{
+        width:auto;
+    }
+    tr{
+        padding:10px 0px;
+        height: 50px;
+        width:auto;
+    }
+    td{
+        min-width: 70px;
+        width:auto;
+    }
+    .form-control{
+        width:auto;
+        display: inline;
+    }
+    input[type="text"]{
+        width:500px;
+    }
+
+    </style>
+</head>
+<title>
+</title>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <!-- Button for smallest screens -->
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav pull-right">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="sidebar-left.html">Left Sidebar</a></li>
+
+                            <li><a href="sidebar-right.html">Right Sidebar</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="active"><a href="contact.html">Contact</a></li>
+
+                    <li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
+
+                </ul>
+
+            </div><!--/.nav-collapse -->
+
+        </div>
+
+    </div> 
+
+    <!-- /.navbar -->
+
+
+
+    <header id="head" class="secondary"></header>
+
+
+
+    <!-- container -->
+
+    <div class="container">
+
+
+
+        <ol class="breadcrumb">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="active">About</li>
+
+        </ol>
+
+
+
+        <div class="row">
+
+            
+
+            <!-- Article main content -->
+
+            <article class="col-sm-9 maincontent">
+
+                <header class="page-header">
+
+                    <h1 class="page-title">IS 350 Sign Up</h1>
+
+                </header>
+
+                
+
+<form name="SignUp" method="POST" action="is3501.php">
+        <em>Please fill in all of the fields below</em><br><br>     
+        <table>
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" name="fullname" class="form-control"></td><!--<br><br>-->
+            </tr>
+            <tr>
+                <td><label>Phone:</label></td>
+                <td><input type="text" name="phone" class="form-control"></td><!--<br><br>-->
+            </tr>               
+            <tr>
+                <td><label>UCID:</label></td>
+                <td><input type="text" name="ucid" class="form-control"><!--<br><br>-->
+            </tr>
+            <tr>
+                <td><label>Major: </label></td>
+                <td><input type="text" name="major" class="form-control"></td><!--<br><br>-->
+            </tr>
+            <tr>
+                <td><label>NJIT ID: </label></td>
+                <td><input type="text" name="ID" class="form-control"></td><!--<br><br>-->
+            </tr>
+            <tr>
+                <td><label>Level</label></td>
+                <td><select name="level" class="form-control">
+                        <option value="Freshmen">Freshmen</option>
+                        <option value="Sophmore">Sophmore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                        <option value="Graduate">Graduate</option> 
+                    </select></td><!--<br><br>-->
+            </tr>
+        </table><br>
+        <label>What are your experiences with web develop or computer programming?</label><br><br>
+        <textarea name="experience" rows="10" cols="100" class="form-control"></textarea><br><br>
+        <label>What do you hope to contribute to this community service experience and what do you hope to gain from this community service assignment?</label><br><br>
+        <textarea name="contribute" rows="10" cols="100" class="form-control"></textarea><br><br>
+        <label>Do you have your own transportation?</label>
+        <input type="radio" name="transportation" value="Yes">Yes
+        <input type="radio" name="transportation" value="No">No <br><br>
+        <label>When are you available? </label><br><br>
+        <em>Please choose your availability including your start and end time.</em><br><br>
+        <table>
+            <tr>
+                <td><label>Monday: </label></td>
+                <td><select name="startMonday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endMonday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00  p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select></td>
+            </tr>
+            <tr>   
+                <td><label>Tuesday: </label></td>
+                <td><select name="startTuesday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endTuesday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select></td> 
+            </tr>
+            <tr>
+                <td><label>Wednesday: </label></td>
+                <td><select name="startWednesday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endWednesday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select></td>
+            </tr>
+            <tr>
+                <td><label>Thursday: </label></td>
+                <td><select name="startThursday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endThursday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00  a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select></td>
+            </tr>
+            <tr>
+                <td><label>Friday: </label></td>
+                <td><select name="startFriday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endFriday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option> 
+                   </select></td>
+            </tr>
+            <tr>
+                <td><label>Saturday: </label></td>
+                <td><select name="startSaturday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select>
+                   to
+                   <select name="endSaturday" class="form-control">
+                       <option value="--">Not Avaliable</option>
+                       <option value="8:30 a.m.">8:30 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:00 a.m.">9:00 a.m.</option>
+                       <option value="9:30 a.m.">9:30 a.m.</option>
+                       <option value="10:00 a.m.">10:00 a.m.</option> 
+                       <option value="10:30 a.m.">10:30 a.m.</option>
+                       <option value="11:00 a.m.">11:00 a.m.</option>
+                       <option value="11:30 a.m.">11:30 a.m.</option>
+                       <option value="12:00 p.m.">12:00 p.m.</option>
+                       <option value="12:30 p.m.">12:30 p.m.</option>
+                       <option value="1:00 p.m.">1:00 p.m.</option>
+                       <option value="1:30 p.m.">1:30 p.m.</option>
+                       <option value="2:00 p.m.">2:00 p.m.</option>
+                       <option value="2:30 p.m.">2:30 p.m.</option>
+                       <option value="3:00 p.m.">3:00 p.m.</option>
+                       <option value="3:30 p.m.">3:30 p.m.</option>
+                       <option value="4:00 p.m.">4:00 p.m.</option>
+                       <option value="4:30 p.m.">4:30 p.m.</option>
+                       <option value="5:00 p.m.">5:00 p.m.</option>
+                       <option value="5:30 p.m.">5:30 p.m.</option>
+                   </select> </td>
+            </tr>
+        </table>       <br><br>
+        <input type="submit" id="submit" class="form-control">
+    </form>
+
+
+
+            </article>
+
+            <!-- /Article -->
+
+            
+
+        
+
+        </div>
+
+    </div>  <!-- /container -->
+
+    
+
+    <section class="container-full top-space">
+
+        <div id="map"></div>
+
+    </section>
+
+
+
+    <footer id="footer">
+
+
+
+        <div class="footer1">
+
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-3 widget">
+
+                        <h3 class="widget-title">Contact</h3>
+
+                        <div class="widget-body">
+
+                            <p>+234 23 9873237<br>
+
+                                <a href="mailto:#">some.email@somewhere.com</a><br>
+
+                                <br>
+
+                                234 Hidden Pond Road, Ashland City, TN 37015
+
+                            </p>    
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-3 widget">
+
+                        <h3 class="widget-title">Follow me</h3>
+
+                        <div class="widget-body">
+
+                            <p class="follow-me-icons clearfix">
+
+                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+
+                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+
+                                <a href=""><i class="fa fa-github fa-2"></i></a>
+
+                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+
+                            </p>    
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6 widget">
+
+                        <h3 class="widget-title">Text widget</h3>
+
+                        <div class="widget-body">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+
+                            <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div> <!-- /row of widgets -->
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer2">
+
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-6 widget">
+
+                        <div class="widget-body">
+
+                            <p class="simplenav">
+
+                                <a href="#">Home</a> | 
+
+                                <a href="about.html">About</a> |
+
+                                <a href="sidebar-right.html">Sidebar</a> |
+
+                                <a href="contact.html">Contact</a> |
+
+                                <b><a href="signup.html">Sign up</a></b>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6 widget">
+
+                        <div class="widget-body">
+
+                            <p class="text-right">
+
+                                Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div> <!-- /row of widgets -->
+
+            </div>
+
+        </div>
+
+    </footer>   
+	
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/headroom.min.js"></script>
+
+    <script src="assets/js/jQuery.headroom.min.js"></script>
+
+    <script src="assets/js/template.js"></script>
+
+    
+
+    <!-- Google Maps -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+
+    <script src="assets/js/google-map.js"></script>
+
+</body>
+</html>
